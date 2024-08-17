@@ -1,0 +1,85 @@
+.navbar {
+    max-width: 100vw;
+    box-shadow: 0 0 1rem #c97346;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+}
+
+.contactBar {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right, #673227, #371813);
+    justify-content: space-between;
+}
+
+.contactInfo {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 0.7rem;
+    flex-direction: row;
+}
+
+.container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+} 
+
+.logo {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5rem;
+}
+
+.ul {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-direction:row;
+    color: black;
+    list-style: none;
+}
+
+.li {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    &:hover {
+        background-color: #f6eade;
+        color: #d28e65;    
+    }
+}
+
+.buttonContainer {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1rem;
+}

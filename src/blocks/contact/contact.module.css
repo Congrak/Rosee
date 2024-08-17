@@ -1,0 +1,73 @@
+.container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 1rem;
+    padding: 2rem 0rem;
+    text-align: center;
+    color: #371813;
+    background: linear-gradient(-45deg, #EBCDB3, #D4A679, #8B5E3C, #EBCDB3);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    border-top: 3px solid #371813;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.box {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxRight {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxLeft {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0 0 1rem #C06946;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    color: #371813;
+    opacity: 0.9;
+}

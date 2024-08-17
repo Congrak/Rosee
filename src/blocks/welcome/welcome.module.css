@@ -1,0 +1,36 @@
+.container {
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(135deg, #e9cbb1  21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),linear-gradient(225deg, #e9cbb1  21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+    background-color:#e9cbb1 ;
+    background-size: 64px 128px;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.image {
+    mask-image: linear-gradient(black 80%, transparent);
+}
+
+.text {
+    color: white;
+    padding: 1rem;
+    background-color: #bb5e3b;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem #bb5e3b;
+    opacity: 0.9;
+}
+
+.wrapper {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem
+}
