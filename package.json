@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "ts-check": "tsc",
+    "vercel-deploy": "tsc && next build"
   },
   "dependencies": {
     "@emotion/react": "11.13.0",
