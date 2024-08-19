@@ -1,4 +1,4 @@
-import { priceListType } from "./globalTypes.type";
+import { priceListType } from "./globalTypes.d";
 
 export const menuList: string[] = [
   "Inicio",
