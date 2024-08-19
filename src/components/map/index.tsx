@@ -1,6 +1,6 @@
 "use client";
 
-import { MapProps } from "@/globalTypes.type";
+import { MapProps } from "@/globalTypes.d";
 import MapboxMap, { MapRef } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { Marker } from "react-map-gl";
