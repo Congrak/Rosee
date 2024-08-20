@@ -8,3 +8,8 @@ export interface MapProps {
     lat: number;
     zoom: number;
   }
+
+export interface CalandlyProps {
+    isOpen: boolean; 
+    handleClick: () => void;
+}
