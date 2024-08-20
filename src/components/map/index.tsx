@@ -18,7 +18,7 @@ export const Map = ({ lng, lat, zoom }: MapProps) => {
         latitude: 0,
         zoom: 1,
       }}
-      style={{ width: "100%", height: "60%" }}
+      style={{ width: "100%", height: "60%", borderRadius: '1rem 0 1rem 0' }}
       mapStyle="mapbox://styles/mapbox/streets-v12"
       onLoad={() => {
         const map = mapRef.current && mapRef.current.getMap();
