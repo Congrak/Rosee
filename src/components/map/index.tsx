@@ -4,7 +4,7 @@ import { MapProps } from "@/globalTypes.d";
 import MapboxMap, { MapRef } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { Marker } from "react-map-gl";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 export const Map = ({ lng, lat, zoom }: MapProps) => {
   const mapRef = useRef<MapRef>(null);
@@ -18,7 +18,7 @@ export const Map = ({ lng, lat, zoom }: MapProps) => {
         latitude: 0,
         zoom: 1,
       }}
-      style={{ width: "100%", height: "60%", borderRadius: '1rem 0 1rem 0' }}
+      style={{ width: "100%", height: "60%", borderRadius: '1rem 1rem 0 0' }}
       mapStyle="mapbox://styles/mapbox/streets-v12"
       onLoad={() => {
         const map = mapRef.current && mapRef.current.getMap();

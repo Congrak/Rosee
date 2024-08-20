@@ -36,6 +36,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    gap: 0.5rem;
 }
 
 .li {
@@ -55,4 +56,6 @@
 
 .image {
     border-radius: 0 0 0 8rem;
+    height: 100% !important;
+    width: 40% !important;
 }

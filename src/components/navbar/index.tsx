@@ -1,18 +1,9 @@
-"use client";
-
 import Image from "next/image";
 import styles from "./navbar.module.css";
-import { Button } from "@mui/material";
 import { menuList } from "@/contants";
-import { useCallback, useState } from "react";
-import { Calendly } from "../calendly";
+import { AppointmentButton } from "../appointmentButton";
 
 export const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const handleClick = useCallback(() => {
-    setIsOpen(prev => !prev)
-  }, [setIsOpen])
 
   return (
     <>
@@ -49,18 +40,10 @@ export const Navbar = () => {
             </ul>
           </div>
           <div className={styles.buttonContainer} id="root">
-            <Button
-              variant="contained"
-              sx={{ background: "linear-gradient(to right, #c97346, #bb5e3b)" }}
-              onClick={handleClick}
-            >
-              Agenda tu visita
-            </Button>
-
+            <AppointmentButton />
           </div>
         </nav>
       </div>
-      <Calendly isOpen={isOpen} handleClick={handleClick} />
     </>
   );
 };

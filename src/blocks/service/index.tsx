@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./service.module.css";
 import { priceList } from "@/contants";
+import { AppointmentButton } from "@/components/appointmentButton";
 // import { CheckMarkCircleIcon } from "icondex";
 
 export const Service = () => {
@@ -14,24 +15,25 @@ export const Service = () => {
           {priceList.map((item) => (
             <li key={item.name} className={styles.li}>
               <p className={styles.priceText}>
-{/*               <CheckMarkCircleIcon color="#bb5e3b" height={25} width={25} /> */}
+                {/*               <CheckMarkCircleIcon color="#bb5e3b" height={25} width={25} /> */}
                 {item.name}
               </p>
               <p>{item.price}</p>
             </li>
           ))}
+          <AppointmentButton />
         </ul>
       </div>
-      <div>
-        <Image
-          src="/lifting.webp"
-          alt="lifting"
-          width={450}
-          height={500}
-          layout="cover"
-          className={styles.image}
-        />
-      </div>
+
+      <Image
+        src="/lifting.webp"
+        alt="lifting"
+        width={450}
+        height={500}
+        layout="cover"
+        className={styles.image}
+      />
+
     </div>
   );
 };
