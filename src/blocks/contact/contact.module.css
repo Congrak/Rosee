@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    height: fit-content;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -12,6 +12,7 @@
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
     border-top: 3px solid #371813;
+    scroll-snap-align: center;
 }
 
 @keyframes gradientAnimation {

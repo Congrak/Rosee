@@ -1,12 +1,13 @@
 .container {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding:0;
     border-top: 3px solid #361914;
+    scroll-snap-align: center;
 }
 
 .text {
