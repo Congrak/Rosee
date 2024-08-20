@@ -4,4 +4,5 @@
     overflow-y: scroll;
     scroll-behavior: smooth;
     width: 100%;
+    box-sizing: border-box;
 }

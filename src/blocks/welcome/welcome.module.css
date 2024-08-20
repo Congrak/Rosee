@@ -1,16 +1,17 @@
 .container {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 100px);
     background: linear-gradient(135deg, #e9cbb1  21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),linear-gradient(225deg, #e9cbb1  21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
     background-color:#e9cbb1 ;
     background-size: 64px 128px;
-    padding: 1rem 0;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     scroll-snap-align: center;
+    box-sizing: border-box;
 }
 
 .image {
