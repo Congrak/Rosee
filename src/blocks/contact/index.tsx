@@ -6,9 +6,7 @@ export const Contact = () => {
     <div className={styles.container}>
       <h1>VISITANOS</h1>
       <div className={styles.box}>
-        <div className={styles.boxRight}>
-          <Map lng={LONGITUDE} lat={LATITUDE} zoom={ZOOM} />
-        </div>
+        <Map lng={LONGITUDE} lat={LATITUDE} zoom={ZOOM} />
         <div className={styles.boxLeft}>
           <div className={styles.text}>
             <h1>
